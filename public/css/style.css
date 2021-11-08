@@ -1,0 +1,258 @@
+
+  body {
+    background-image: url("/img/pikachu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    
+  }
+  
+  nav {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+  }
+  
+  nav img {
+    width: 6rem;
+    padding-left: 0.5rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    padding: 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 68, 68);
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 0.5s;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(255, 159, 159);
+  }
+  
+  nav article {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  nav article h1 a {
+      color: rgb(255, 68, 68);
+      text-decoration: none;
+  }
+  
+  nav article img {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  
+  header {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 0 0 1rem #00000060;
+    text-align: center;
+  }
+  
+  
+  a.card {
+    width: 20rem;
+    padding: 3rem;
+    box-shadow: 0 0 1rem #00000060;
+    margin: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  
+  a.card:hover {
+    transform: scale(1.1);
+  }
+  
+  a.card img {
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  a.card h2 {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: #000;
+  }
+  
+  section#pokedex {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  section#cadastrar {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin: 0 20rem 10rem 20rem;
+    box-shadow: 0 0 1rem #00000060;
+    border-radius: 1rem;
+  }
+  
+  section#cadastrar h2 {
+    color: rgb(255, 68, 68);
+    text-align: center;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  
+  section#cadastrar form {
+    width: 100%;
+    padding: 3rem;
+  }
+  
+  section#cadastrar form div input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 0.1rem solid #ccc;
+  }
+  
+  section#cadastrar form div label {
+    font-size: 1.3rem;
+    color: rgb(255, 0, 0);
+  }
+  
+  section#cadastrar form button {
+    border: 1px solid rgb(255, 68, 68);
+    background-color: #fff;
+    color: rgb(255, 68, 68);
+    padding: 1rem;
+    font-size: 0.8vw;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    width: 40%;
+  }
+  
+  section#cadastrar form button:hover {
+    background-color: rgb(255, 68, 68);
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  section#message {
+    padding: 1rem;
+    background-color: rgb(197, 255, 214);
+    color: #004d04;
+    position: fixed;
+    top: 5rem;
+    right: 2rem;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 2rem;
+  }
+  
+  span#close:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.2);
+  }
+  
+  section#details {
+    margin: 0 20rem 0 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 0 1rem #00000060;
+  }
+  
+  section#details div#infos p {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+  section#details div#infos div#info-datail {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    width: 60%;
+    border-radius: 1rem;
+  }
+  
+  section#details div#infos div#info-datail h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 0.5rem 0 1rem 0;
+  }
+  
+  section#details div#infos h3 {
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+  
+  section#details div#infos h2 {
+    background-color: rgb(255, 47, 47);
+    padding: 1rem;
+    color: #fff;
+    border-radius: 1rem;
+    width: 50%;
+    text-align: center;
+    margin-top: 1rem;
+  }

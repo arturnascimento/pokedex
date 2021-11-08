@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadastro de Pokemons</title>
+</head>
+<body>
+
+    <nav>
+        <article>
+            <img src="/img/pokebola-go.png" alt="">
+            <h1><a href="/">Pokedex</a></h1>
+        </article>
+        
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/registro">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Cadastro de Pokemon</h1>
+    </header>
+
+    <section id="cadastrar">
+        <form action="/new" method="POST">
+            <div>
+                <label for="numero">Número: </label>
+                <input type="text" name="numero" id="numero" placeholder="Digite o número" required>
+            </div>
+
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required>
+            </div>
+    
+            <div>
+                <label for="tipo">Tipo: </label>
+                <input type="text" name="tipo" id="tipo" placeholder="Digite o tipo" required>
+            </div>
+    
+            <div>
+                <label for="imagem">Imagem: </label>
+                <input type="text" name="imagem" id="imagem" placeholder="Digite o link da imagem" required>
+            </div>
+
+            <div>
+                <label for="descricao">Descrição: </label>
+                <input type="text" name="descricao" id="descricao" placeholder="Digite a descrição" required>
+            </div>
+
+            <div>
+                <label for="altura">Altura: </label>
+                <input type="text" name="altura" id="altura" placeholder="Digite a altura" required>
+            </div>
+
+            <div>
+                <label for="peso">Peso: </label>
+                <input type="text" name="peso" id="peso" placeholder="Digite a largura" required>
+            </div>
+
+            <div>
+                <label for="categoria">Categoria: </label>
+                <input type="text" name="categoria" id="categoria" placeholder="Digite a categoria" required>
+            </div>
+
+            <div>
+                <label for="habilidade">Habilidade: </label>
+                <input type="text" name="habilidade" id="habilidade" placeholder="Digite a habilidade" required>
+            </div>
+    
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+</body>
+</html>
